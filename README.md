@@ -16,8 +16,8 @@
 1. Клонируйте репозиторий:
    
    ```bash
-   git clone https://github.com/yourusername/network-tools.git
-   cd network-tools
+   git clone https://github.com/llavandaa/Network/Network.git
+   cd Network
    ```
    
 2. Установите зависимости:
