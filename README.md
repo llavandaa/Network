@@ -46,7 +46,13 @@
    ```bash
    python3 icmp_scan.py
    ```
-4. Port Scanner (portscan.py)
+
+   **Пример вывода:**
+   ```
+   IP: 192.168.0.103 is alive
+   ```
+   
+5. Port Scanner (portscan.py)
 
    Сканирование портов на указанных хостах.
    **Поддерживает:**
@@ -61,10 +67,27 @@
    ```
    Пример ввода:
    ```
-   Enter target IPs (comma-separated): 192.168.1.1, 10.0.0.1
+   Enter target IPs (comma-separated): 192.168.0.1, 192.168.0.2
    Enter ports (comma-separated): 22, 80, 443
    ```
-5. Packet Sniffer(```sniffer_v1.1.py```)
+
+   **Пример вывода:**
+   ```
+   Scanning 192.168.0.1:
+   [+] Port    22 → OPEN
+   [+] Port    80 → OPEN
+   [+] Port   443 → OPEN
+
+   Scanning 192.168.0.2:
+   WARNING: MAC address to reach destination not found. Using broadcast.
+   [!] Port    22 → NO RESPONSE
+   WARNING: MAC address to reach destination not found. Using broadcast.
+   [!] Port    80 → NO RESPONSE
+   WARNING: MAC address to reach destination not found. Using broadcast.
+   [!] Port   443 → NO RESPONSE
+   ```
+   
+7. Packet Sniffer(```sniffer_v1.1.py```)
    Графический сниффер пакетов с фильтрацией.
    **Функции:**
    - Перехват TCP/UDP/ICMP трафика
@@ -73,13 +96,17 @@
 
    **Запуск:**
    ```bash
-   python3 sniffer_V1.1.py
+   sudo -E env "PATH=$PATH" python3 sniffer_v1.1.py
    ```
 
+   **Пример вывода:**
+   
+   ![Снимок экрана_20250209_000800](https://github.com/user-attachments/assets/390ec642-4451-4e33-a73f-e9e7518ae12b)
+   
 ## ⚠️ Важно
 
 - Для работы с RAW-сокетами требуются права root.
 - Используйте инструменты только в тестовых сетях с разрешения администратора.
 - Не все функции могут работать в Windows (например, ARP-сканер).
 
-  
+
