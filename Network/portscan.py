@@ -15,9 +15,9 @@ for ip in ip_list:
         
         # Анализ ответа
         if response and response.haslayer(TCP):
-            if response[TCP].flags & 0x12:  # google говорит SYN-ACK (0x12 = 18)
+            if response[TCP].flags & 0x12:  # SYN-ACK (0x12 = 18)
                 print(f"[+] Port {port:5} → OPEN")
-            elif response[TCP].flags & 0x04:  # google говорит RST (0x04 = 4)
+            elif response[TCP].flags & 0x04:  # RST (0x04 = 4)
                 print(f"[-] Port {port:5} → CLOSED")
             else:
                 print(f"[?] Port {port:5} → UNEXPECTED FLAGS: {response[TCP].flags}")
