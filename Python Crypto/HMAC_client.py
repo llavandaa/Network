@@ -22,7 +22,7 @@ def gen_sha256_hmac(message, key):
 async def try_auth(uri):
     async with websockets.connect(uri) as websocket:
         shared_key = "supersecret"
-        message = "Hello from Fuat"
+        message = f"Hello from {input("write ur name")}"
 
         welcome_message = await websocket.recv()
         print(f"Server answered: {welcome_message}")
