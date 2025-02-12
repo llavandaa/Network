@@ -28,7 +28,7 @@
    
 ## 🚀 Скрипты
 
-1. ARP Scanner (```arp-scan.py```)
+### 1. ARP Scanner (```arp-scan.py```)
    
    Обнаружение устройств в локальной сети через ARP-запросы.
    
@@ -50,7 +50,7 @@
    IP: 192.168.1.101 MAC: aa:bb:cc:dd:ee:ff
    ```
    
-3. ICMP Ping (```icmp_scan.py```)
+### 2. ICMP Ping (```icmp_scan.py```)
 
    Проверка доступности хоста через ICMP Echo Request.
    **Запуск:**
@@ -65,7 +65,7 @@
    IP: 192.168.0.103 is alive
    ```
    
-5. Port Scanner (portscan.py)
+### 3. Port Scanner (```portscan.py```)
 
    Сканирование портов на указанных хостах.
    
@@ -105,7 +105,7 @@
    [!] Port   443 → NO RESPONSE
    ```
    
-7. Packet Sniffer(```AdvancedPacketSniffer.py```)
+### 4. Packet Sniffer(```AdvancedPacketSniffer.py```)
    
    Графический сниффер пакетов с фильтрацией.
    
