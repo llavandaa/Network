@@ -16,7 +16,7 @@
 1. Клонируйте репозиторий:
    
    ```bash
-   git clone https://github.com/llavandaa/Network/Network.git
+   git clone https://github.com/llavandaa/Network.git
    cd Network
    ```
    
@@ -105,7 +105,7 @@
    [!] Port   443 → NO RESPONSE
    ```
    
-7. Packet Sniffer(```sniffer_v1.1.py```)
+7. Packet Sniffer(```AdvancedPacketSniffer.py```)
    
    Графический сниффер пакетов с фильтрацией.
    
@@ -120,12 +120,10 @@
    **Запуск:**
    
    ```bash
-   sudo -E env "PATH=$PATH" python3 sniffer_v1.1.py
+   sudo -E env "PATH=$PATH" python3 AdvancedPacketSniffer.py
    ```
 
-   **Пример вывода:**
    
-   ![Снимок экрана_20250209_000800](https://github.com/user-attachments/assets/390ec642-4451-4e33-a73f-e9e7518ae12b)
    
 ## ⚠️ Важно
 
@@ -134,3 +132,8 @@
 - Используйте инструменты только в тестовых сетях с разрешения администратора.
   
 - Не все функции могут работать в Windows (например, ARP-сканер).
+
+
+## Updates
+
+Всю информацию об обновлениях вы можете найти [здесь](https://github.com/llavandaa/Network/blob/main/Updates.md).
